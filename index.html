@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>projeto git</title>
-</head>
-<body>
-    <h1>html apenas</h1>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>formulário cadastro</title>
+    </head>
+    <body>
+        <form>
+            <label for="nome">Nome</label><br>
+            <input id="nome" name="nome" type="text" placeholder="Digite seu nome aqui:"><br>
+            <label for="email">Email</label><br>
+            <input id="email" name="email" type="text" placeholder="Digite seu e-mail aqui:">
+            <section> 
+                <label for="box-text">O que te motivou a participar deste evento?</label><br>
+                <textarea id="box-text" name="box-text" placeholder="Digite sua mensagem aqui:" cols="30" rows="10"></textarea>
+            </section>
+            <label for="modulo"> Selecione um módulo </label><br>
+            <select id="modulo" name="modulo">
+                <option selected disabled> </option>
+                <option value="modulo1">Módulo 1 </option>
+                <option value="modulo2">Módulo 2</option>
+            </select><br>
+            <label for="senha">Cadastre uma senha:</label><br>
+            <input type="password" id="senha" name="cadestre-senha" placeholder="Digite sua senha aqui:"><br>
+            <label for="confirmação-senha">Digite novamente sua senha:</label><br>
+            <input type="password" id="confirmação-senha" name="confirmação-senha" placeholder="Digite sua senha aqui:" /><br>
+            <label for="novidades"> Deseja receber novidades em seu e-mail? </label><br>
+            <input type="radio" id="sim" name="sim/nao">
+            <label for="sim">sim</label> 
+            <input type="radio" id="nao" name="sim/nao"> 
+            <label for="nao">Não</label><br>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </body>
 </html>
